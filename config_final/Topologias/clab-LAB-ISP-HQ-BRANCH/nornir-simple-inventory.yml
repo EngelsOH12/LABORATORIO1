@@ -1,0 +1,121 @@
+---
+C1:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.9
+C2:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.23
+C3:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.22
+C4:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.7
+C5:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.11
+CPE-BRANCH:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.14
+CPE-HQ:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.12
+INTERNET:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.3
+M1:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.2
+M2:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.4
+M3:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.15
+M4:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.25
+SW-BR-1:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.13
+SW-BR-2:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.24
+SW-HQ-1:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.6
+SW-HQ-2:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.10
+PC-BR-1:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.19
+PC-BR-2:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.21
+PC-BR-3:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.16
+PC-BR-4:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.20
+PC-HQ-1:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.17
+PC-HQ-2:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.5
+PC-HQ-3:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.18
+PC-HQ-4:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.8

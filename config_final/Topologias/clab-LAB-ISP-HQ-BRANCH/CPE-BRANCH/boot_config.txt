@@ -1,0 +1,136 @@
+hostname CPE-BRANCH
+!
+no aaa new-model
+!
+ip domain name lab
+!
+ip cef
+!
+ipv6 unicast-routing
+!
+no ip domain lookup
+!
+username admin privilege 15 secret admin
+!
+vrf definition clab-mgmt
+ description clab-mgmt
+ address-family ipv4
+ !
+ address-family ipv6
+ !
+!
+interface Ethernet0/0
+
+ vrf forwarding clab-mgmt
+ description clab-mgmt
+ ip address 172.20.20.14 255.255.255.0
+ ipv6 address 3fff:172:20:20::e/64
+ no shutdown
+!
+interface Ethernet0/2
+ no shutdown
+!
+interface Ethernet1/0
+ no shutdown
+!
+interface Ethernet0/1
+ no shutdown
+!
+interface Ethernet0/3
+ no shutdown
+!
+ip forward-protocol nd
+!
+ip route vrf clab-mgmt 0.0.0.0 0.0.0.0 Ethernet0/0 172.20.20.1
+ipv6 route vrf clab-mgmt ::/0 Ethernet0/0 3fff:172:20:20::1
+!
+ip ssh version 2
+crypto key generate rsa modulus 2048
+!
+line vty 0 4
+ login local
+ transport input ssh
+!
+interface Loopback0
+ ip address 190.0.0.1 255.255.255.255
+!
+interface Ethernet0/1
+ ip address 10.0.0.62 255.255.255.252
+ no shutdown
+!
+interface Ethernet0/2
+ no ip address
+ no shutdown
+!
+interface Ethernet0/2.5
+ encapsulation dot1q 5
+ ip address 192.168.5.1 255.255.255.0
+
+!
+interface Ethernet0/2.10
+ encapsulation dot1q 10
+ ip address 192.168.10.1 255.255.255.0
+!
+interface Ethernet1/0
+ no ip address
+ no shutdown
+!
+interface Ethernet1/0.15
+ encapsulation dot1q 15
+ ip address 192.168.15.1 255.255.255.0
+!
+interface Ethernet1/0.20
+ encapsulation dot1q 20
+ ip address 192.168.20.1 255.255.255.0
+!
+interface Ethernet0/3
+ ip address 200.0.0.6 255.255.255.252
+ no shutdown
+!
+ip forward-protocol nd
+!
+ip routing
+!
+ip http server
+ip http secure-server
+!
+ip route 8.8.8.8 255.255.255.255 10.0.0.61 5
+!
+ip route 8.8.8.8 255.255.255.255 200.0.0.5 
+!
+ip route 10.0.0.2 255.255.255.255 200.0.0.5
+
+! VTI: 
+
+crypto isakmp policy 10
+ encryption aes 256
+ authentication pre-share
+ group 14
+exit 
+!
+crypto isakmp key secretkey address 10.0.0.2
+!
+crypto ipsec transform-set SET-VTI esp-aes 256 esp-sha-hmac
+ mode tunnel
+exit
+!
+crypto ipsec profile PERFIL-VTI
+ set transform-set SET-VTI
+exit
+!
+interface Tunnel0
+ ip address 20.2.2.2 255.255.255.252
+ tunnel source Ethernet0/3
+ tunnel destination 10.0.0.2 
+ tunnel protection ipsec profile PERFIL-VTI
+exit
+
+!
+
+conf t
+router ospf 1
+ network 20.2.2.0 0.0.0.3 area 0
+ network 192.168.0.0 0.0.255.255 area 0
+exit 
+
+end

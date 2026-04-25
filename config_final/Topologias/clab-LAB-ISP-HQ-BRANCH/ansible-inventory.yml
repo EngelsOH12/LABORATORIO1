@@ -1,0 +1,63 @@
+all:
+  vars:
+    # The generated inventory is assumed to be used from the clab host.
+    # Hence no http proxy should be used. Therefore we make sure the http
+    # module does not attempt using any global http proxy.
+    ansible_httpapi_use_proxy: false
+  children:
+    cisco_iol:
+      vars:
+        # ansible_connection: set ansible_connection variable if required
+        ansible_user: admin
+        ansible_password: admin
+      hosts:
+        clab-LAB-ISP-HQ-BRANCH-C1:
+          ansible_host: 172.20.20.9
+        clab-LAB-ISP-HQ-BRANCH-C2:
+          ansible_host: 172.20.20.23
+        clab-LAB-ISP-HQ-BRANCH-C3:
+          ansible_host: 172.20.20.22
+        clab-LAB-ISP-HQ-BRANCH-C4:
+          ansible_host: 172.20.20.7
+        clab-LAB-ISP-HQ-BRANCH-C5:
+          ansible_host: 172.20.20.11
+        clab-LAB-ISP-HQ-BRANCH-CPE-BRANCH:
+          ansible_host: 172.20.20.14
+        clab-LAB-ISP-HQ-BRANCH-CPE-HQ:
+          ansible_host: 172.20.20.12
+        clab-LAB-ISP-HQ-BRANCH-INTERNET:
+          ansible_host: 172.20.20.3
+        clab-LAB-ISP-HQ-BRANCH-M1:
+          ansible_host: 172.20.20.2
+        clab-LAB-ISP-HQ-BRANCH-M2:
+          ansible_host: 172.20.20.4
+        clab-LAB-ISP-HQ-BRANCH-M3:
+          ansible_host: 172.20.20.15
+        clab-LAB-ISP-HQ-BRANCH-M4:
+          ansible_host: 172.20.20.25
+        clab-LAB-ISP-HQ-BRANCH-SW-BR-1:
+          ansible_host: 172.20.20.13
+        clab-LAB-ISP-HQ-BRANCH-SW-BR-2:
+          ansible_host: 172.20.20.24
+        clab-LAB-ISP-HQ-BRANCH-SW-HQ-1:
+          ansible_host: 172.20.20.6
+        clab-LAB-ISP-HQ-BRANCH-SW-HQ-2:
+          ansible_host: 172.20.20.10
+    linux:
+      hosts:
+        clab-LAB-ISP-HQ-BRANCH-PC-BR-1:
+          ansible_host: 172.20.20.19
+        clab-LAB-ISP-HQ-BRANCH-PC-BR-2:
+          ansible_host: 172.20.20.21
+        clab-LAB-ISP-HQ-BRANCH-PC-BR-3:
+          ansible_host: 172.20.20.16
+        clab-LAB-ISP-HQ-BRANCH-PC-BR-4:
+          ansible_host: 172.20.20.20
+        clab-LAB-ISP-HQ-BRANCH-PC-HQ-1:
+          ansible_host: 172.20.20.17
+        clab-LAB-ISP-HQ-BRANCH-PC-HQ-2:
+          ansible_host: 172.20.20.5
+        clab-LAB-ISP-HQ-BRANCH-PC-HQ-3:
+          ansible_host: 172.20.20.18
+        clab-LAB-ISP-HQ-BRANCH-PC-HQ-4:
+          ansible_host: 172.20.20.8

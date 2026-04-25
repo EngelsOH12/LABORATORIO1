@@ -1,0 +1,1279 @@
+{
+  "name": "LAB-ISP-HQ-BRANCH",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-3db0c0ed66d0",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "C1": {
+      "index": "0",
+      "shortname": "C1",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-C1",
+      "fqdn": "C1.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/C1",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:17.12.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.9",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::9",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/C1",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-C1",
+        "clab-node-name": "C1",
+        "clab-node-type": "",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    },
+    "C2": {
+      "index": "1",
+      "shortname": "C2",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-C2",
+      "fqdn": "C2.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/C2",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:17.12.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.23",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::17",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/C2",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-C2",
+        "clab-node-name": "C2",
+        "clab-node-type": "",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    },
+    "C3": {
+      "index": "2",
+      "shortname": "C3",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-C3",
+      "fqdn": "C3.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/C3",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:17.12.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.22",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::16",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/C3",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-C3",
+        "clab-node-name": "C3",
+        "clab-node-type": "",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    },
+    "C4": {
+      "index": "3",
+      "shortname": "C4",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-C4",
+      "fqdn": "C4.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/C4",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:17.12.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.7",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::7",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/C4",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-C4",
+        "clab-node-name": "C4",
+        "clab-node-type": "",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    },
+    "C5": {
+      "index": "4",
+      "shortname": "C5",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-C5",
+      "fqdn": "C5.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/C5",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:17.12.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.11",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::b",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/C5",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-C5",
+        "clab-node-name": "C5",
+        "clab-node-type": "",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    },
+    "CPE-BRANCH": {
+      "index": "5",
+      "shortname": "CPE-BRANCH",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-CPE-BRANCH",
+      "fqdn": "CPE-BRANCH.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/CPE-BRANCH",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:17.12.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.14",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::e",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/CPE-BRANCH",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-CPE-BRANCH",
+        "clab-node-name": "CPE-BRANCH",
+        "clab-node-type": "",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    },
+    "CPE-HQ": {
+      "index": "6",
+      "shortname": "CPE-HQ",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-CPE-HQ",
+      "fqdn": "CPE-HQ.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/CPE-HQ",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:17.12.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.12",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::c",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/CPE-HQ",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-CPE-HQ",
+        "clab-node-name": "CPE-HQ",
+        "clab-node-type": "",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    },
+    "INTERNET": {
+      "index": "7",
+      "shortname": "INTERNET",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-INTERNET",
+      "fqdn": "INTERNET.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/INTERNET",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:17.12.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/INTERNET",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-INTERNET",
+        "clab-node-name": "INTERNET",
+        "clab-node-type": "",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    },
+    "M1": {
+      "index": "8",
+      "shortname": "M1",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-M1",
+      "fqdn": "M1.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/M1",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:17.12.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/M1",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-M1",
+        "clab-node-name": "M1",
+        "clab-node-type": "",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    },
+    "M2": {
+      "index": "9",
+      "shortname": "M2",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-M2",
+      "fqdn": "M2.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/M2",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:17.12.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/M2",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-M2",
+        "clab-node-name": "M2",
+        "clab-node-type": "",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    },
+    "M3": {
+      "index": "10",
+      "shortname": "M3",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-M3",
+      "fqdn": "M3.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/M3",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:17.12.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.15",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::f",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/M3",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-M3",
+        "clab-node-name": "M3",
+        "clab-node-type": "",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    },
+    "M4": {
+      "index": "11",
+      "shortname": "M4",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-M4",
+      "fqdn": "M4.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/M4",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:17.12.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.25",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::19",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/M4",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-M4",
+        "clab-node-name": "M4",
+        "clab-node-type": "",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    },
+    "PC-BR-1": {
+      "index": "12",
+      "shortname": "PC-BR-1",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-PC-BR-1",
+      "fqdn": "PC-BR-1.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/PC-BR-1",
+      "kind": "linux",
+      "image": "alpine:3.23",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.19",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::13",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/PC-BR-1",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-PC-BR-1",
+        "clab-node-name": "PC-BR-1",
+        "clab-node-type": "",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    },
+    "PC-BR-2": {
+      "index": "13",
+      "shortname": "PC-BR-2",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-PC-BR-2",
+      "fqdn": "PC-BR-2.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/PC-BR-2",
+      "kind": "linux",
+      "image": "alpine:3.23",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.21",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::15",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/PC-BR-2",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-PC-BR-2",
+        "clab-node-name": "PC-BR-2",
+        "clab-node-type": "",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    },
+    "PC-BR-3": {
+      "index": "14",
+      "shortname": "PC-BR-3",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-PC-BR-3",
+      "fqdn": "PC-BR-3.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/PC-BR-3",
+      "kind": "linux",
+      "image": "alpine:3.23",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.16",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::10",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/PC-BR-3",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-PC-BR-3",
+        "clab-node-name": "PC-BR-3",
+        "clab-node-type": "",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    },
+    "PC-BR-4": {
+      "index": "15",
+      "shortname": "PC-BR-4",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-PC-BR-4",
+      "fqdn": "PC-BR-4.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/PC-BR-4",
+      "kind": "linux",
+      "image": "alpine:3.23",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.20",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::14",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/PC-BR-4",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-PC-BR-4",
+        "clab-node-name": "PC-BR-4",
+        "clab-node-type": "",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    },
+    "PC-HQ-1": {
+      "index": "16",
+      "shortname": "PC-HQ-1",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-PC-HQ-1",
+      "fqdn": "PC-HQ-1.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/PC-HQ-1",
+      "kind": "linux",
+      "image": "alpine:3.23",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.17",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::11",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/PC-HQ-1",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-PC-HQ-1",
+        "clab-node-name": "PC-HQ-1",
+        "clab-node-type": "",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    },
+    "PC-HQ-2": {
+      "index": "17",
+      "shortname": "PC-HQ-2",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-PC-HQ-2",
+      "fqdn": "PC-HQ-2.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/PC-HQ-2",
+      "kind": "linux",
+      "image": "alpine:3.23",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/PC-HQ-2",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-PC-HQ-2",
+        "clab-node-name": "PC-HQ-2",
+        "clab-node-type": "",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    },
+    "PC-HQ-3": {
+      "index": "18",
+      "shortname": "PC-HQ-3",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-PC-HQ-3",
+      "fqdn": "PC-HQ-3.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/PC-HQ-3",
+      "kind": "linux",
+      "image": "alpine:3.23",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.18",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::12",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/PC-HQ-3",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-PC-HQ-3",
+        "clab-node-name": "PC-HQ-3",
+        "clab-node-type": "",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    },
+    "PC-HQ-4": {
+      "index": "19",
+      "shortname": "PC-HQ-4",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-PC-HQ-4",
+      "fqdn": "PC-HQ-4.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/PC-HQ-4",
+      "kind": "linux",
+      "image": "alpine:3.23",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.8",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::8",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/PC-HQ-4",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-PC-HQ-4",
+        "clab-node-name": "PC-HQ-4",
+        "clab-node-type": "",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    },
+    "SW-BR-1": {
+      "index": "20",
+      "shortname": "SW-BR-1",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-SW-BR-1",
+      "fqdn": "SW-BR-1.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/SW-BR-1",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:L2-17.12.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.13",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::d",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/SW-BR-1",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-SW-BR-1",
+        "clab-node-name": "SW-BR-1",
+        "clab-node-type": "l2",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    },
+    "SW-BR-2": {
+      "index": "21",
+      "shortname": "SW-BR-2",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-SW-BR-2",
+      "fqdn": "SW-BR-2.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/SW-BR-2",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:L2-17.12.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.24",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::18",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/SW-BR-2",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-SW-BR-2",
+        "clab-node-name": "SW-BR-2",
+        "clab-node-type": "l2",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    },
+    "SW-HQ-1": {
+      "index": "22",
+      "shortname": "SW-HQ-1",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-SW-HQ-1",
+      "fqdn": "SW-HQ-1.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/SW-HQ-1",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:L2-17.12.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::6",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/SW-HQ-1",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-SW-HQ-1",
+        "clab-node-name": "SW-HQ-1",
+        "clab-node-type": "l2",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    },
+    "SW-HQ-2": {
+      "index": "23",
+      "shortname": "SW-HQ-2",
+      "longname": "clab-LAB-ISP-HQ-BRANCH-SW-HQ-2",
+      "fqdn": "SW-HQ-2.LAB-ISP-HQ-BRANCH.io",
+      "group": "",
+      "labdir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/SW-HQ-2",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:L2-17.12.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.10",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::a",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-3db0c0ed66d0",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/angel/TLN03/TLN-03-M/Topologias/clab-LAB-ISP-HQ-BRANCH/SW-HQ-2",
+        "clab-node-longname": "clab-LAB-ISP-HQ-BRANCH-SW-HQ-2",
+        "clab-node-name": "SW-HQ-2",
+        "clab-node-type": "l2",
+        "clab-owner": "angel",
+        "clab-topo-file": "/home/angel/TLN03/TLN-03-M/Topologias/Topologia-ISP.yml",
+        "containerlab": "LAB-ISP-HQ-BRANCH"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "CPE-HQ",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:d7:20:40",
+          "peer": "z"
+        },
+        "z": {
+          "node": "SW-HQ-1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:8d:3e:d1",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "CPE-HQ",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:a2:a9:89",
+          "peer": "z"
+        },
+        "z": {
+          "node": "SW-HQ-2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:7a:12:88",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "SW-HQ-1",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:41:52:0b",
+          "peer": "z"
+        },
+        "z": {
+          "node": "PC-HQ-1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:a1:e8:c4",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "SW-HQ-1",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:2f:3c:41",
+          "peer": "z"
+        },
+        "z": {
+          "node": "PC-HQ-2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:63:18:c0",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "SW-HQ-2",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:50:16:69",
+          "peer": "z"
+        },
+        "z": {
+          "node": "PC-HQ-3",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:ad:4d:7a",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "SW-HQ-2",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:d4:8e:58",
+          "peer": "z"
+        },
+        "z": {
+          "node": "PC-HQ-4",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:fd:c3:3d",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "CPE-BRANCH",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:c7:e9:c5",
+          "peer": "z"
+        },
+        "z": {
+          "node": "SW-BR-1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:6d:0e:91",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "CPE-BRANCH",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:ab:82:bb",
+          "peer": "z"
+        },
+        "z": {
+          "node": "SW-BR-2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:90:b8:6b",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "SW-BR-1",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:53:70:45",
+          "peer": "z"
+        },
+        "z": {
+          "node": "PC-BR-1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:47:ac:21",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "SW-BR-1",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:62:76:6e",
+          "peer": "z"
+        },
+        "z": {
+          "node": "PC-BR-2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:67:84:d6",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "SW-BR-2",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:89:cb:34",
+          "peer": "z"
+        },
+        "z": {
+          "node": "PC-BR-3",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:91:60:7a",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "SW-BR-2",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:76:1f:8b",
+          "peer": "z"
+        },
+        "z": {
+          "node": "PC-BR-4",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:af:3f:9e",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "CPE-HQ",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:b0:40:16",
+          "peer": "z"
+        },
+        "z": {
+          "node": "C2",
+          "interface": "eth5",
+          "mac": "aa:c1:ab:06:af:e3",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "CPE-HQ",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:5c:ab:f0",
+          "peer": "z"
+        },
+        "z": {
+          "node": "M1",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:96:ef:e9",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "CPE-BRANCH",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:60:dc:37",
+          "peer": "z"
+        },
+        "z": {
+          "node": "C1",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:b6:25:e5",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "CPE-BRANCH",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:e4:84:74",
+          "peer": "z"
+        },
+        "z": {
+          "node": "M3",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:09:00:a4",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "INTERNET",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:4b:4b:49",
+          "peer": "z"
+        },
+        "z": {
+          "node": "C5",
+          "interface": "eth5",
+          "mac": "aa:c1:ab:f8:20:e4",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "INTERNET",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:6b:75:1b",
+          "peer": "z"
+        },
+        "z": {
+          "node": "M2",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:5b:94:f0",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "M1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:80:07:23",
+          "peer": "z"
+        },
+        "z": {
+          "node": "M2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:cc:72:e0",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "M1",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:76:b7:76",
+          "peer": "z"
+        },
+        "z": {
+          "node": "M3",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:60:37:7f",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "M1",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:8a:db:8f",
+          "peer": "z"
+        },
+        "z": {
+          "node": "M4",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:33:c9:db",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "M4",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:38:cf:75",
+          "peer": "z"
+        },
+        "z": {
+          "node": "M2",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:9e:1d:0b",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "M4",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:18:59:59",
+          "peer": "z"
+        },
+        "z": {
+          "node": "M3",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:83:c9:c9",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "C2",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:c2:58:15",
+          "peer": "z"
+        },
+        "z": {
+          "node": "C5",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:ca:33:71",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "C5",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:29:d2:f2",
+          "peer": "z"
+        },
+        "z": {
+          "node": "C1",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:8e:ff:b7",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "C2",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:9f:b2:6e",
+          "peer": "z"
+        },
+        "z": {
+          "node": "C1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:e5:43:ec",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "C2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:29:81:48",
+          "peer": "z"
+        },
+        "z": {
+          "node": "C3",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:8a:27:af",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "C2",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:22:1f:8a",
+          "peer": "z"
+        },
+        "z": {
+          "node": "C4",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:c3:a3:e6",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "C5",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:49:56:93",
+          "peer": "z"
+        },
+        "z": {
+          "node": "C3",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:05:be:4c",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "C5",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:41:d5:ed",
+          "peer": "z"
+        },
+        "z": {
+          "node": "C4",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:bf:29:81",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "M4",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:ee:b5:bb",
+          "peer": "z"
+        },
+        "z": {
+          "node": "C3",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:3d:55:73",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "M4",
+          "interface": "eth5",
+          "mac": "aa:c1:ab:7d:56:91",
+          "peer": "z"
+        },
+        "z": {
+          "node": "C4",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:f3:ab:ba",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}
